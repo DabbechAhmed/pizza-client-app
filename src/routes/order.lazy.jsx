@@ -29,7 +29,7 @@ export default function Order() {
   }
 
   async function fetchPizzaTypes() {
-    const response = await fetch(`${apiUrl}/api/pizza-types`);
+    const response = await fetch(`${apiUrl}/api/pizzas`);
     const data = await response.json();
     setPizzaTypes(data);
     setLoading(false);
